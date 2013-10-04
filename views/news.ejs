@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% feed_items.forEach(function(feed_item){ %>
+        <li><a href="<%= feed_item.link %>"><%= feed_item.title %></a></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
